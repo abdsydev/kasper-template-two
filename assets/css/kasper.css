@@ -1,0 +1,72 @@
+/* Normalize */
+@import url("../css/normalize.css");
+/* Font Awesome */
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css");
+/* Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;800&display=swap");
+/* <-Kasper Landing CSS-> */
+@import url(../css/kasper-landing.css);
+/* Main CSS */
+:root {
+  --main-color: #00C7FC;
+  --secondary-color: #2b2b2b;
+  /* Other Colors */
+  --sub-text-color: #777777;
+  --gray-50: #FCFCFC;
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Open Sans", sans-serif;
+}
+/* Kasper Components */
+.container {
+  padding-left: 25px;
+  padding-right: 25px;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* // Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+  .container {
+    max-width: 540px;
+  }
+}
+/* // Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+}
+/* // Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .container {
+    max-width: 960px;
+  }
+}
+/* // X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
+  }
+}
+/* // add a space from top &  bottom in every section */
+section:not(.landing) {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+/* .sec-title {} */
+/* End Kasper Components */
