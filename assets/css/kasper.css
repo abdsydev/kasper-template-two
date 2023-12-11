@@ -40,25 +40,25 @@ body {
   margin-right: auto;
 }
 /* // Small devices (landscape phones, 576px and up) */
-@media (min-width: 576px) {
+@media screen and (min-width: 576px) {
   .container {
     max-width: 540px;
   }
 }
 /* // Medium devices (tablets, 768px and up) */
-@media (min-width: 768px) {
+@media screen and (min-width: 768px) {
   .container {
     max-width: 720px;
   }
 }
 /* // Large devices (desktops, 992px and up) */
-@media (min-width: 992px) {
+@media screen and (min-width: 992px) {
   .container {
     max-width: 980px;
   }
 }
 /* // X-Large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px) {
+@media screen and (min-width: 1200px) {
   .container {
     max-width: 1140px;
   }
@@ -120,7 +120,7 @@ section:not(.landing) {
   width: 100%;
   z-index: 1;
   .container {
-    @media (max-width: 768px) {
+    @media screen and (max-width: 768px) {
       width: 100%;
     }
     .header-content {
@@ -137,7 +137,7 @@ section:not(.landing) {
         .desktop-nav-links {
           display: flex;
           gap: 20px;
-          @media (max-width: 768px) {
+          @media screen and (max-width: 768px) {
             display: none;
           }
           & a {
@@ -187,7 +187,7 @@ section:not(.landing) {
         }
         .toggle-menu {
           display: none;
-          @media (max-width: 768px) {
+          @media screen and (max-width: 768px) {
             display: flex;
             color: white;
             font-weight: bold;
@@ -199,7 +199,7 @@ section:not(.landing) {
         }
         ul {
           display: none;
-          @media (max-width: 768px) {
+          @media screen and (max-width: 768px) {
             display: none;
             position: absolute;
             top: 100%;
@@ -257,7 +257,7 @@ section:not(.landing) {
     background-color: rgba(15, 116, 143, 0.7);
     color: var(--gray-50);
     z-index: 1;
-    @media (max-width: 767px) {
+    @media screen and (max-width: 767px) {
       width: 100%;
       justify-content: flex-start;
     }
@@ -273,13 +273,13 @@ section:not(.landing) {
         font-size: 14px;
         line-height: 2;
       }
-      @media (max-width: 767px) {
+      @media screen and (max-width: 767px) {
         max-width: 100%;
       }
     }
   }
   .control {
-    @media (max-width: 767px) {
+    @media screen and (max-width: 767px) {
       display: none;
     }
     & i {
@@ -332,7 +332,7 @@ section:not(.landing) {
         display: flex;
         align-items: flex-start;
         gap: 30px;
-        @media (max-width: 767px) {
+        @media screen and (max-width: 767px) {
           flex-flow: column wrap;
           align-items: center;
           justify-content: center;
@@ -376,7 +376,7 @@ section:not(.landing) {
     justify-content: space-between;
     align-items: center;
     .image {
-      @media (max-width: 991px) {
+      @media screen and (max-width: 991px) {
         display: none;
       }
       & img {
@@ -393,7 +393,7 @@ section:not(.landing) {
       padding: 50px;
       right: 0;
       z-index: 1;
-      @media (max-width: 991px) {
+      @media screen and (max-width: 991px) {
         width: 100%;
       }
       & h3 {
@@ -460,10 +460,10 @@ section:not(.landing) {
       &:hover img {
         transform: rotate(3deg) scale(1.1);
       }
-      @media (max-width: 1199px) {
+      @media screen and (max-width: 1199px) {
         flex-basis: 50%;
       }
-      @media (max-width: 767px) {
+      @media screen and (max-width: 767px) {
         flex-basis: 100%;
       }
     }
@@ -528,7 +528,7 @@ section:not(.landing) {
     & img {
       position: relative;
       margin-bottom: -120px;
-      @media (max-width: 767px) {
+      @media screen and (max-width: 767px) {
         margin-bottom: -80px;
         width: 100%;
         padding: 0 10px;
@@ -596,7 +596,7 @@ section:not(.landing) {
     flex-flow: row-reverse;
     gap: 100px;
     padding: 0 10px;
-    @media (max-width: 991px) {
+    @media screen and (max-width: 991px) {
       flex-flow: column wrap;
     }
     /* skills */
@@ -679,7 +679,7 @@ section:not(.landing) {
           margin-bottom: 20px;
           justify-content: flex-start;
           align-items: flex-start;
-          @media (max-width: 575px) {
+          @media screen and (max-width: 575px) {
             flex-flow: column wrap;
             justify-content: center;
             align-items: center;
@@ -747,8 +747,6 @@ section:not(.landing) {
   color: var(--gray-50);
   background-size: cover;
   position: relative;
-  @media ma {
-  }
   &::after {
     content: "";
     position: absolute;
@@ -881,7 +879,7 @@ section:not(.landing) {
     color: var(--gray-50);
     position: relative;
     z-index: 1;
-    @media (max-width: 767px) {
+    @media screen and (max-width: 767px) {
       flex-flow: column;
       justify-content: center;
       align-items: center;
@@ -937,7 +935,7 @@ section:not(.landing) {
     justify-content: space-between;
     align-items: flex-start;
     gap: 50px;
-    @media (max-width: 991px) {
+    @media screen and (max-width: 991px) {
       flex-flow: column-reverse wrap;
       justify-content: center;
       align-items: center;
