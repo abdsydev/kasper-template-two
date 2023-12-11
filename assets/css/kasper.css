@@ -187,18 +187,27 @@ section:not(.landing) {
         }
         .toggle-menu {
           display: none;
-          &:hover + ul {
-            display: flex;
-          }
           @media (max-width: 768px) {
             display: flex;
             color: white;
             font-weight: bold;
             font-size: 20px;
           }
+          &:hover + ul {
+            display: flex;
+          }
         }
         ul {
           display: none;
+          @media (max-width: 768px) {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            flex-flow: column wrap;
+            width: 100%;
+            background-color: rgb(0 0 0 / 60%);
+          }
           &:hover {
             display: flex;
           }
@@ -213,15 +222,6 @@ section:not(.landing) {
               color: var(--main-color);
               border-bottom: 1px solid var(--main-color);
             }
-          }
-          @media (max-width: 768px) {
-            display: none;
-            position: absolute;
-            top: 100%;
-            left: 0;
-            flex-flow: column wrap;
-            width: 100%;
-            background-color: rgb(0 0 0 / 60%);
           }
         }
       }
